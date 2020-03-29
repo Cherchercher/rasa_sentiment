@@ -7,7 +7,7 @@ setup(
     url='https://github.com/Revmaker/rasa_addons',
     license='Apache 2.0',
     author='Cher Huang',
-    author_email='cher@carlabs.com',
+    author_email='cherhuang@goplanatrip.com',
     description='Addons for Rasa',
     install_requires=["rasa", "nltk"]
 )

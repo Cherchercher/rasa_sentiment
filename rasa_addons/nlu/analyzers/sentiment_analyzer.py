@@ -3,6 +3,9 @@ from rasa.nlu import utils
 from rasa.nlu.model import Metadata
 
 import nltk
+
+nltk.downloader.download('vader_lexicon')
+
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import os
 
@@ -55,7 +58,6 @@ class SentimentAnalyzer(Component):
 
         message.set("entities", [entity], add_to_output=True)
 
-    def persist(self, model_dir):
-        """Pass because a pre-trained model is already persisted"""
-
-        pass
+    # def persist(self, model_dir):
+    #     """Pass because a pre-trained model is already persisted"""
+    #     pass
