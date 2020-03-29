@@ -1,0 +1,1 @@
+from rasa_addons.nlu.analyzers.sentiment_analyzer import SentimentAnalyzer
